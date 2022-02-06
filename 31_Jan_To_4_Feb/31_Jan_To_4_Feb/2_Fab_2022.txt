@@ -1,0 +1,170 @@
+         
+Q.1)  Evaluate below expression without running the code
+
+      int x = 9, y = 12;
+      int a = 2, b = 4, c = 6;
+      int exp = 4/3 * (x + 34) + 9 * (a + b * c) + (3 + y * (2 + a)) / (a + b*y);
+      Note: No program is required. Just give value of exp by calculating manually.
+
+ Ans---> int exp = 4/3 * (x + 34) + 9 * (a + b * c) + (3 + y * (2 + a)) / (a + b*y);
+                 = 4/3 * 43 + 9 * 26 + 53 / 50;
+                 = 1 * 43 + 9 * 26 + 1;
+                 = 43 + 234 + 1
+                 = 278;
+
+//****************************************************************************************//
+
+Q.2) WAP to check whether given number is lesser or 
+     greater than 10 if its lesser than check further if its lesser or greater than 
+     5 using ternary operator and Print greater or smaller accordingly.
+     
+    import java.util.Scanner;
+
+    public class Q_2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter User Number : ");
+		int num = sc.nextInt();
+		
+		
+		int result = num > 10 ? (num > 5 ? num : 5) : (10 > 5 ? 10 : 5);
+		System.out.println("Greater number is = " +result);		
+
+	}
+
+}
+
+
+//****************************************************************************************//
+Q.3) WAP to check whether given number is 10,20,30,40,50 or not any of these
+     using ternary operator.
+
+     import java.util.Scanner;
+
+     public class Q_3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any Number : ");
+		int ch = sc.nextInt();
+		
+		String result = (ch==10) || (ch==20) || (ch==30) || (ch==40) || (ch==50) 	? "Is it Given number  " : "Not given Number" ;
+		System.out.println(result);
+
+	}
+
+}
+   
+
+//****************************************************************************************//
+Q.4) write a program to print name of the month by passing number of the month 
+     using using switch or else if.
+   
+     import java.util.Scanner;
+
+     public class Passing_Number {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Month Number : ");
+		int ch = sc.nextInt();
+		
+		if(ch == 1) {
+			System.out.println("January");
+		}
+		else if (ch == 2) {
+			System.out.println("February");
+		}
+		else if(ch == 3){
+			System.out.println("March");
+		}
+		else if (ch == 4) {
+			System.out.println("April");
+		}
+		else if(ch == 5){
+			System.out.println("May");
+		}
+		else if (ch == 6) {
+			System.out.println("June");
+		}
+		else if(ch == 7){
+			System.out.println("July");
+		}
+		else if(ch == 8){
+			System.out.println("August");
+		}
+		else if (ch == 9) {
+			System.out.println("September");
+		}
+		else if(ch == 10){
+			System.out.println("October");
+		}
+		else if(ch == 11){
+			System.out.println("November");
+		}
+		else if (ch == 12) {
+			System.out.println("December");
+		}
+		else
+		{
+			System.out.println("Please enter valid month number....!");
+		}
+
+	}
+
+}
+
+
+//****************************************************************************************//
+Q.5) write a program to print given character is vovel or Consonant using ternary operator."
+
+    import java.util.Scanner;
+
+    public class Q_5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any Character : ");
+		char ch = sc.next().charAt(0);
+		
+		boolean result = (ch=='a') || (ch=='e') || (ch=='i') || (ch=='o') || (ch=='u') ||
+				(ch=='A') || (ch=='E') || (ch=='I') || (ch=='O') || (ch=='U')	? true : false ;
+		
+		if(result == true) {
+			System.out.print("Its Vowel");
+		}
+		else {
+			System.out.print("Its Consonant");
+		}
+		
+
+		
+	}
+
+}
+
+//Another Way also..
+
+    import java.util.Scanner;
+
+  public class Q_5 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter any Character : ");
+		char ch = sc.next().charAt(0);
+		
+		String result = (ch=='a') || (ch=='e') || (ch=='i') || (ch=='o') || (ch=='u') ||
+				(ch=='A') || (ch=='E') || (ch=='I') || (ch=='O') || (ch=='U')	? "Vowel" : "Consonant";
+		
+		System.out.println(result);
+
+		
+	}
+
+}
+
+
+
+//****************************************************************************************//
